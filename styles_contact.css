@@ -1,0 +1,122 @@
+@import url("./fonts/Font\ robotto/Roboto-Regular.ttf");
+@import url("./fonts/Noto\ sans/NotoSans-SemiBoldItalic.ttf");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+:root {
+    --main-color: #004225;
+    --main-text-color: #F8FAFC;
+    --font-notosans: 'Noto Sans', sans-serif;
+    --font-robotto: 'Roboto', sans-serif;
+    --seperator-color: #DFE7E3;
+    --secondary-text-color: #1B1B25;
+    --tertiary-text-color: #FB6109;
+}
+
+.contact__title {
+    color: var(--tertiary-text-color);
+    font-size: 30px;
+    font-family: var(--font-notosans);
+    font-weight: 600;
+}
+
+    color: black;
+    font-size: 18px;
+    font-family: var(--font-notosans);
+    font-weight: 500;
+}
+
+.contact {
+    padding: 0px 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    width: 35%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.form__group {
+    display: flex;
+    font-family: var(--font-notosans);
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.form__group > input {
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+.form__group > textarea {
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 5px;  
+    width: 100%;
+}
+
+.form > button {
+    background-color: #FB6109;
+    border: none;
+    color: var(--main-text-color);
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    font-family: var(--font-notosans);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media (max-width: 1190px) {
+    .contact__container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact {
+        padding: 0rem 1rem;
+    }
+    .contact__image {
+        width: 500px;
+    }
+}
+
+@media (max-width: 540px) {
+    .contact__image {
+        width: 415px;
+    }
+}
